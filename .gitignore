@@ -15,3 +15,6 @@ Thumbs.db
 uji_*.csv
 *.pcap
 *.pcapng
+
+kdd99_feature_extractor/
+streamlit.log
