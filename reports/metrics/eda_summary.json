@@ -1,0 +1,19 @@
+{
+    "train_rows": 125973,
+    "test_rows": 22544,
+    "feature_count": 41,
+    "categorical_features": [
+        "protocol_type",
+        "service",
+        "flag"
+    ],
+    "numeric_feature_count": 38,
+    "train_binary_distribution": {
+        "0": 67343,
+        "1": 58630
+    },
+    "test_binary_distribution": {
+        "1": 12833,
+        "0": 9711
+    }
+}

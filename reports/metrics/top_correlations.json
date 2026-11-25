@@ -1,0 +1,102 @@
+[
+    {
+        "feature_1": "num_compromised",
+        "feature_2": "num_root",
+        "absolute_correlation": 0.9988334525784719
+    },
+    {
+        "feature_1": "serror_rate",
+        "feature_2": "srv_serror_rate",
+        "absolute_correlation": 0.9932892425370462
+    },
+    {
+        "feature_1": "rerror_rate",
+        "feature_2": "srv_rerror_rate",
+        "absolute_correlation": 0.9890076529820762
+    },
+    {
+        "feature_1": "dst_host_srv_serror_rate",
+        "feature_2": "srv_serror_rate",
+        "absolute_correlation": 0.9862517164931046
+    },
+    {
+        "feature_1": "dst_host_serror_rate",
+        "feature_2": "dst_host_srv_serror_rate",
+        "absolute_correlation": 0.9850522227996314
+    },
+    {
+        "feature_1": "dst_host_srv_serror_rate",
+        "feature_2": "serror_rate",
+        "absolute_correlation": 0.9811389586179897
+    },
+    {
+        "feature_1": "dst_host_serror_rate",
+        "feature_2": "serror_rate",
+        "absolute_correlation": 0.979373082984311
+    },
+    {
+        "feature_1": "dst_host_serror_rate",
+        "feature_2": "srv_serror_rate",
+        "absolute_correlation": 0.9775960119654399
+    },
+    {
+        "feature_1": "dst_host_srv_rerror_rate",
+        "feature_2": "srv_rerror_rate",
+        "absolute_correlation": 0.9702079974522381
+    },
+    {
+        "feature_1": "dst_host_srv_rerror_rate",
+        "feature_2": "rerror_rate",
+        "absolute_correlation": 0.9644486655034351
+    },
+    {
+        "feature_1": "dst_host_rerror_rate",
+        "feature_2": "rerror_rate",
+        "absolute_correlation": 0.9267485035758941
+    },
+    {
+        "feature_1": "dst_host_rerror_rate",
+        "feature_2": "dst_host_srv_rerror_rate",
+        "absolute_correlation": 0.9246878915781156
+    },
+    {
+        "feature_1": "dst_host_rerror_rate",
+        "feature_2": "srv_rerror_rate",
+        "absolute_correlation": 0.9178223356828635
+    },
+    {
+        "feature_1": "dst_host_same_srv_rate",
+        "feature_2": "dst_host_srv_count",
+        "absolute_correlation": 0.8966634699359223
+    },
+    {
+        "feature_1": "hot",
+        "feature_2": "is_guest_login",
+        "absolute_correlation": 0.8602881047178524
+    },
+    {
+        "feature_1": "dst_host_same_srv_rate",
+        "feature_2": "same_srv_rate",
+        "absolute_correlation": 0.7889779634629471
+    },
+    {
+        "feature_1": "dst_host_srv_serror_rate",
+        "feature_2": "same_srv_rate",
+        "absolute_correlation": 0.7653220593832233
+    },
+    {
+        "feature_1": "same_srv_rate",
+        "feature_2": "serror_rate",
+        "absolute_correlation": 0.7618875139505153
+    },
+    {
+        "feature_1": "dst_host_serror_rate",
+        "feature_2": "same_srv_rate",
+        "absolute_correlation": 0.7606480292966593
+    },
+    {
+        "feature_1": "same_srv_rate",
+        "feature_2": "srv_serror_rate",
+        "absolute_correlation": 0.7567840292328145
+    }
+]

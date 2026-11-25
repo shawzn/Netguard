@@ -1,0 +1,336 @@
+{
+  "dataset_shapes": {
+    "train_baseline": [
+      100778,
+      121
+    ],
+    "train_smotenc": [
+      107748,
+      121
+    ],
+    "validation": [
+      25195,
+      121
+    ],
+    "external_test": [
+      22544,
+      121
+    ]
+  },
+  "experiments": {
+    "xgb_baseline": {
+      "best_iteration": 397,
+      "validation": {
+        "threshold": 0.5,
+        "accuracy": 0.999246,
+        "precision": 0.999232,
+        "recall": 0.999147,
+        "f1_score": 0.99919,
+        "roc_auc": 0.999993,
+        "pr_auc": 0.999992,
+        "fpr": 0.000668,
+        "fnr": 0.000853,
+        "confusion_matrix": {
+          "tn": 13460,
+          "fp": 9,
+          "fn": 10,
+          "tp": 11716
+        }
+      },
+      "external_test": {
+        "threshold": 0.5,
+        "accuracy": 0.789567,
+        "precision": 0.96969,
+        "recall": 0.650666,
+        "f1_score": 0.778773,
+        "roc_auc": 0.966067,
+        "pr_auc": 0.966673,
+        "fpr": 0.026877,
+        "fnr": 0.349334,
+        "confusion_matrix": {
+          "tn": 9450,
+          "fp": 261,
+          "fn": 4483,
+          "tp": 8350
+        },
+        "category_breakdown": {
+          "DoS": {
+            "total": 7458,
+            "predicted_attack": 6307,
+            "predicted_normal": 1151,
+            "correct_rate": 0.845669
+          },
+          "Normal": {
+            "total": 9711,
+            "predicted_attack": 261,
+            "predicted_normal": 9450,
+            "correct_rate": 0.973123
+          },
+          "Probe": {
+            "total": 2421,
+            "predicted_attack": 1725,
+            "predicted_normal": 696,
+            "correct_rate": 0.712515
+          },
+          "R2L": {
+            "total": 2885,
+            "predicted_attack": 306,
+            "predicted_normal": 2579,
+            "correct_rate": 0.106066
+          },
+          "U2R": {
+            "total": 67,
+            "predicted_attack": 12,
+            "predicted_normal": 55,
+            "correct_rate": 0.179104
+          },
+          "Unknown_Attack": {
+            "total": 2,
+            "predicted_attack": 0,
+            "predicted_normal": 2,
+            "correct_rate": 0.0
+          }
+        }
+      },
+      "top_20_features": [
+        {
+          "feature": "service__ecr_i",
+          "importance": 0.355451
+        },
+        {
+          "feature": "service__http",
+          "importance": 0.148478
+        },
+        {
+          "feature": "src_bytes",
+          "importance": 0.127019
+        },
+        {
+          "feature": "dst_bytes",
+          "importance": 0.043032
+        },
+        {
+          "feature": "hot",
+          "importance": 0.035747
+        },
+        {
+          "feature": "same_srv_rate",
+          "importance": 0.024335
+        },
+        {
+          "feature": "count",
+          "importance": 0.023428
+        },
+        {
+          "feature": "service__private",
+          "importance": 0.017636
+        },
+        {
+          "feature": "service__urp_i",
+          "importance": 0.016505
+        },
+        {
+          "feature": "diff_srv_rate",
+          "importance": 0.015279
+        },
+        {
+          "feature": "flag__RSTR",
+          "importance": 0.014095
+        },
+        {
+          "feature": "logged_in",
+          "importance": 0.013508
+        },
+        {
+          "feature": "num_compromised",
+          "importance": 0.013021
+        },
+        {
+          "feature": "protocol_type__icmp",
+          "importance": 0.011567
+        },
+        {
+          "feature": "service__ftp",
+          "importance": 0.011365
+        },
+        {
+          "feature": "dst_host_same_srv_rate",
+          "importance": 0.010826
+        },
+        {
+          "feature": "dst_host_same_src_port_rate",
+          "importance": 0.010125
+        },
+        {
+          "feature": "dst_host_serror_rate",
+          "importance": 0.008116
+        },
+        {
+          "feature": "service__ftp_data",
+          "importance": 0.007929
+        },
+        {
+          "feature": "flag__S1",
+          "importance": 0.007239
+        }
+      ]
+    },
+    "xgb_smotenc": {
+      "best_iteration": 373,
+      "validation": {
+        "threshold": 0.5,
+        "accuracy": 0.999246,
+        "precision": 0.999232,
+        "recall": 0.999147,
+        "f1_score": 0.99919,
+        "roc_auc": 0.999991,
+        "pr_auc": 0.99999,
+        "fpr": 0.000668,
+        "fnr": 0.000853,
+        "confusion_matrix": {
+          "tn": 13460,
+          "fp": 9,
+          "fn": 10,
+          "tp": 11716
+        }
+      },
+      "external_test": {
+        "threshold": 0.5,
+        "accuracy": 0.793958,
+        "precision": 0.969819,
+        "recall": 0.658537,
+        "f1_score": 0.784425,
+        "roc_auc": 0.966677,
+        "pr_auc": 0.966998,
+        "fpr": 0.027083,
+        "fnr": 0.341463,
+        "confusion_matrix": {
+          "tn": 9448,
+          "fp": 263,
+          "fn": 4382,
+          "tp": 8451
+        },
+        "category_breakdown": {
+          "DoS": {
+            "total": 7458,
+            "predicted_attack": 6489,
+            "predicted_normal": 969,
+            "correct_rate": 0.870072
+          },
+          "Normal": {
+            "total": 9711,
+            "predicted_attack": 263,
+            "predicted_normal": 9448,
+            "correct_rate": 0.972917
+          },
+          "Probe": {
+            "total": 2421,
+            "predicted_attack": 1672,
+            "predicted_normal": 749,
+            "correct_rate": 0.690624
+          },
+          "R2L": {
+            "total": 2885,
+            "predicted_attack": 278,
+            "predicted_normal": 2607,
+            "correct_rate": 0.09636
+          },
+          "U2R": {
+            "total": 67,
+            "predicted_attack": 12,
+            "predicted_normal": 55,
+            "correct_rate": 0.179104
+          },
+          "Unknown_Attack": {
+            "total": 2,
+            "predicted_attack": 0,
+            "predicted_normal": 2,
+            "correct_rate": 0.0
+          }
+        }
+      },
+      "top_20_features": [
+        {
+          "feature": "service__ecr_i",
+          "importance": 0.34266
+        },
+        {
+          "feature": "service__http",
+          "importance": 0.150313
+        },
+        {
+          "feature": "src_bytes",
+          "importance": 0.129767
+        },
+        {
+          "feature": "dst_bytes",
+          "importance": 0.040452
+        },
+        {
+          "feature": "hot",
+          "importance": 0.035293
+        },
+        {
+          "feature": "count",
+          "importance": 0.022735
+        },
+        {
+          "feature": "same_srv_rate",
+          "importance": 0.021478
+        },
+        {
+          "feature": "num_compromised",
+          "importance": 0.01955
+        },
+        {
+          "feature": "service__private",
+          "importance": 0.018399
+        },
+        {
+          "feature": "service__urp_i",
+          "importance": 0.015915
+        },
+        {
+          "feature": "diff_srv_rate",
+          "importance": 0.015696
+        },
+        {
+          "feature": "flag__RSTR",
+          "importance": 0.014283
+        },
+        {
+          "feature": "protocol_type__icmp",
+          "importance": 0.014093
+        },
+        {
+          "feature": "logged_in",
+          "importance": 0.012524
+        },
+        {
+          "feature": "wrong_fragment",
+          "importance": 0.011176
+        },
+        {
+          "feature": "dst_host_same_srv_rate",
+          "importance": 0.010067
+        },
+        {
+          "feature": "dst_host_same_src_port_rate",
+          "importance": 0.0094
+        },
+        {
+          "feature": "protocol_type__tcp",
+          "importance": 0.008456
+        },
+        {
+          "feature": "service__domain_u",
+          "importance": 0.008096
+        },
+        {
+          "feature": "dst_host_serror_rate",
+          "importance": 0.007871
+        }
+      ]
+    }
+  }
+}

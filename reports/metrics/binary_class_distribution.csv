@@ -1,0 +1,5 @@
+dataset,class,proportion
+Train,Normal,0.5345828074269883
+Train,Attack,0.4654171925730117
+Test,Normal,0.43075762952448543
+Test,Attack,0.5692423704755145

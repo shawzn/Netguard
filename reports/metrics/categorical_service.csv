@@ -1,0 +1,16 @@
+service,count
+http,40338
+private,21853
+domain_u,9043
+smtp,7313
+ftp_data,6860
+eco_i,4586
+other,4359
+ecr_i,3077
+telnet,2353
+finger,1767
+ftp,1754
+auth,955
+Z39_50,862
+uucp,780
+courier,734
